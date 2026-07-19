@@ -1,0 +1,27 @@
+CRYSTAL'S CRITTER HAVEN — VISUAL STUDIO CODE INSTRUCTIONS
+
+1. Keep this entire folder together. Do not move index.html away from style.css.
+2. Open Visual Studio Code.
+3. Choose File > Open Folder.
+4. Select the complete "Crystals-Critter-Haven-VSCode" folder.
+5. In the left sidebar, click index.html.
+
+TO VIEW THE WEBSITE
+
+Recommended method:
+- Install the "Live Server" extension in Visual Studio Code.
+- Right-click index.html.
+- Choose "Open with Live Server."
+
+Simple method:
+- Find index.html in Finder and double-click it.
+
+WHAT EACH FILE DOES
+
+- index.html: all page wording and sections
+- css/style.css: colors, layout, fonts, and phone design
+- js/script.js: mobile menu and automatic footer year
+- images: the logos and sharing image
+
+If the page appears as plain black text on a white background, style.css is not
+beside index.html. Return both files to this folder and open index.html again.
