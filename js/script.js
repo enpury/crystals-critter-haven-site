@@ -1,4 +1,12 @@
-/* Crystal's Critter Haven website interactions. No libraries are required. */
+/*
+  JAVASCRIPT MAP
+  - Mobile navigation: opens and closes the Menu button on smaller screens.
+  - Copyright year: keeps the footer year current.
+  - Current-page navigation: highlights the visitor's active page.
+  - Inquiry context: carries adoption or sponsorship details into contact links.
+  - Footer social links: adds the same Facebook and Instagram icons everywhere.
+  No libraries are required.
+*/
 const menuButton = document.querySelector('.menu-button');
 const mainMenu = document.querySelector('#main-menu');
 
@@ -31,6 +39,32 @@ document.querySelectorAll('#main-menu a, .header-donate').forEach((link) => {
   if (linkFile === currentFile) {
     link.classList.add('current-page');
     link.setAttribute('aria-current', 'page');
+  }
+});
+
+// Carries adoption and sponsorship context into the contact form.
+const query = new URLSearchParams(window.location.search);
+const requestedTopic = query.get('topic');
+const requestedResident = query.get('resident');
+const topicSelect = document.querySelector('#contact-topic');
+const messageField = document.querySelector('#contact-message');
+
+if (topicSelect && requestedTopic) {
+  const matchingOption = Array.from(topicSelect.options).find((option) => option.value === requestedTopic || option.text === requestedTopic);
+  if (matchingOption) topicSelect.value = matchingOption.value;
+}
+
+if (messageField && requestedResident) {
+  messageField.value = `I'm interested in ${requestedResident}. Please send me more information.`;
+}
+
+document.querySelectorAll('[data-resident-name]').forEach((element) => {
+  if (requestedResident) element.textContent = requestedResident;
+});
+
+document.querySelectorAll('.sponsorship-contact').forEach((link) => {
+  if (requestedResident) {
+    link.href = `contact.html?topic=${encodeURIComponent('Donation or sponsorship')}&resident=${encodeURIComponent(requestedResident)}`;
   }
 });
 
