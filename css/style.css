@@ -1744,10 +1744,10 @@ main > .section:not(.home-paths):not(.content-grid):not(.featured-animals):not(.
 .resource-category:nth-child(2)::before{background-image:url('../images/haven-corgi.jpg');background-position:center 31%}
 .resource-category:nth-child(3)::before{background-image:url('../images/adopt-orange-cat.jpg');background-position:center 32%}
 .resource-category:nth-child(4)::before{background-image:url('../images/haven-baby-birds.jpg');background-position:center 40%}
-.resources-page .resource-category:nth-child(1){background:#d8c39b}.resources-page .resource-category:nth-child(1)::before{background-image:url('../images/crystal-wildlife-care.jpg');background-position:center 35%}
-.resources-page .resource-category:nth-child(2){background:#c9a08e}.resources-page .resource-category:nth-child(2)::before{background-image:url('../images/haven-corgi.jpg');background-position:center 27%}
-.resources-page .resource-category:nth-child(3){background:#acb99e}.resources-page .resource-category:nth-child(3)::before{background-image:url('../images/adopt-orange-cat.jpg');background-position:center 34%}
-.resources-page .resource-category:nth-child(4){background:#9ebabb}.resources-page .resource-category:nth-child(4)::before{background-image:url('../images/haven-baby-birds.jpg');background-position:center 43%}
+.resources-page .resource-category:nth-child(1){background:#f8e7b7}.resources-page .resource-category:nth-child(1)::before{background-image:url('../images/crystal-wildlife-care.jpg');background-position:center 35%}
+.resources-page .resource-category:nth-child(2){background:#f4d1c4}.resources-page .resource-category:nth-child(2)::before{background-image:url('../images/haven-corgi.jpg');background-position:center 27%}
+.resources-page .resource-category:nth-child(3){background:#e0ecd5}.resources-page .resource-category:nth-child(3)::before{background-image:url('../images/adopt-orange-cat.jpg');background-position:center 34%}
+.resources-page .resource-category:nth-child(4){background:#d3ebeb}.resources-page .resource-category:nth-child(4)::before{background-image:url('../images/haven-baby-birds.jpg');background-position:center 43%}
 
 .contact-form-section{display:grid;grid-template-columns:minmax(0,1fr) minmax(300px,.52fr);gap:clamp(40px,7vw,100px);background:#fffaf0}
 #email-contact-form{display:grid;gap:10px;max-width:780px;margin-top:30px;padding:34px;border:4px solid #fff;border-radius:42px 29px 48px 34px;background:#d7eff0;box-shadow:0 15px 30px rgba(45,55,44,.1)}
@@ -1845,4 +1845,131 @@ main > .section:not(.home-paths):not(.content-grid):not(.featured-animals):not(.
   .reptile-support-note{grid-template-columns:1fr}
   .reptile-support-note .partner-badge{justify-self:center}
   .reptile-support-note>.button{grid-column:auto;justify-self:stretch;width:100%;min-width:0;white-space:normal}
+}
+
+/* Wildlife guide: one calm, practical visual system with no decorative clutter. */
+.wildlife-help-page{
+  --wildlife-camel:#f8e7b7;
+  --wildlife-sage:#e0ecd5;
+  --wildlife-clay:#f4d1c4;
+  --wildlife-blue:#d3ebeb;
+  --wildlife-deep:#315f62;
+  --wildlife-paper:#fffaf1;
+}
+.wildlife-help-page main>.section{
+  border-top:0!important;
+  border-radius:0!important;
+  box-shadow:none;
+}
+.wildlife-help-page main>.section::before,
+.wildlife-help-page main>.section::after{
+  content:none!important;
+  display:none!important;
+}
+.wildlife-help-page .wildlife-alert{
+  grid-template-columns:minmax(0,1fr) minmax(280px,390px);
+  min-height:430px;
+  gap:clamp(40px,8vw,130px);
+  background:linear-gradient(115deg,#fff0bf 0%,#fffaf1 55%,#d8eff0 100%);
+}
+.wildlife-help-page .wildlife-alert>div:first-child p:not(.eyebrow){max-width:680px;line-height:1.65}
+.wildlife-help-page .wildlife-alert-actions{
+  max-width:none;
+  padding:34px;
+  border:1px solid rgba(49,95,98,.15);
+  border-radius:28px;
+  background:#fdfaf4;
+  box-shadow:0 16px 34px rgba(49,65,57,.11);
+}
+.wildlife-help-page .wildlife-alert-actions .button{width:100%;text-align:center}
+.wildlife-help-page .wildlife-need-help{
+  grid-template-columns:minmax(270px,.72fr) minmax(0,1.28fr);
+  align-items:center;
+  gap:38px clamp(45px,7vw,110px);
+  background:var(--wildlife-paper);
+}
+.wildlife-help-page .wildlife-need-help ul{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:0 28px;
+  padding:18px 28px;
+  border:1px solid rgba(49,95,98,.13);
+  border-radius:28px;
+  background:#fffdf8;
+  box-shadow:0 12px 28px rgba(49,65,57,.07);
+}
+.wildlife-help-page .wildlife-need-help li{
+  position:relative;
+  padding:16px 8px 16px 23px;
+  border-bottom:1px solid rgba(49,65,57,.14);
+  border-radius:0;
+  background:transparent;
+  box-shadow:none;
+}
+.wildlife-help-page .wildlife-need-help li::before{
+  content:'';
+  position:absolute;
+  top:23px;
+  left:2px;
+  width:8px;
+  height:8px;
+  border-radius:50%;
+  background:var(--wildlife-deep);
+}
+.wildlife-help-page .wildlife-observe-note{
+  padding:22px 26px;
+  border-left-color:var(--wildlife-deep);
+  background:#e9f3e8;
+}
+.wildlife-help-page .wildlife-guide{
+  gap:20px;
+  padding-top:80px;
+  padding-bottom:80px;
+  background:#fbf7ef;
+}
+.wildlife-help-page .wildlife-steps-intro{
+  grid-column:1/-1;
+  max-width:760px;
+  margin:0 auto 18px;
+  text-align:center;
+}
+.wildlife-help-page .wildlife-steps-intro h2{margin:.12em 0 0}
+.wildlife-help-page .wildlife-guide article{
+  min-height:390px;
+  padding:clamp(30px,4vw,50px);
+  border:1px solid rgba(49,65,57,.13);
+  border-radius:30px;
+  box-shadow:0 14px 28px rgba(49,65,57,.08);
+}
+.wildlife-help-page .wildlife-guide .tone-yellow{background:var(--wildlife-camel)}
+.wildlife-help-page .wildlife-guide .tone-blue{background:var(--wildlife-blue)}
+.wildlife-help-page .wildlife-guide .tone-peach{background:var(--wildlife-clay)}
+.wildlife-help-page .wildlife-guide .tone-green{background:var(--wildlife-sage)}
+.wildlife-help-page .wildlife-guide article>span{
+  width:44px;
+  height:44px;
+  border:0;
+  background:var(--wildlife-deep);
+  color:#fffaf0;
+}
+.wildlife-help-page .wildlife-guide h2{margin:.55em 0 .35em}
+.wildlife-help-page .guide-callout{margin-top:auto;padding-top:24px;color:#274f51}
+.wildlife-help-page .wildlife-bottom-cta{
+  background:linear-gradient(110deg,#f8e7b7,#fff7e8 55%,#e0ecd5);
+}
+.wildlife-help-page .wildlife-bottom-cta>div{max-width:900px}
+.wildlife-help-page .wildlife-bottom-cta h2{margin:.15em 0 .3em}
+.wildlife-help-page .wildlife-bottom-cta p:not(.eyebrow){max-width:720px;font-size:1.08rem;line-height:1.6}
+
+@media(max-width:1050px){
+  .wildlife-help-page .wildlife-alert,
+  .wildlife-help-page .wildlife-need-help{grid-template-columns:1fr}
+  .wildlife-help-page .wildlife-alert-actions{max-width:620px}
+}
+@media(max-width:650px){
+  .wildlife-help-page .wildlife-alert{min-height:0;gap:28px}
+  .wildlife-help-page .wildlife-alert-actions{padding:24px 20px}
+  .wildlife-help-page .wildlife-need-help ul{grid-template-columns:1fr;padding:12px 20px}
+  .wildlife-help-page .wildlife-guide{grid-template-columns:1fr;gap:16px;padding-top:55px;padding-bottom:55px}
+  .wildlife-help-page .wildlife-guide article{min-height:0}
 }

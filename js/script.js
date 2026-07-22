@@ -72,7 +72,7 @@ if (emailContactForm) {
   });
 }
 
-// Turns the donation mockup into a useful, ready-to-send inquiry until checkout is connected.
+// Turns the donation inquiry form into a ready-to-send email until checkout is connected.
 const donationInterestForm = document.querySelector('#donation-interest-form');
 if (donationInterestForm) {
   donationInterestForm.addEventListener('submit', (event) => {
