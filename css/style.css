@@ -1337,7 +1337,7 @@ main>section+section.home-action-band::after{
   line-height:1.2;
 }
 .home-intro .section-heading h2 span{
-  font-size:1.18em;
+  font-size:1.42em;
 }
 .home-intro .section-heading .script-line{
   margin:4px auto 24px;
@@ -1664,4 +1664,185 @@ main > .section:not(.home-paths):not(.content-grid):not(.featured-animals):not(.
   .storybook-photo img,.small-photo img{height:330px}
   .reptile-partner{grid-template-columns:1fr;text-align:center}.reptile-partner-mark{margin:auto}.reptile-partner>.button{grid-column:auto}.tax-note{align-items:flex-start;flex-direction:column}
   .availability-note{align-items:flex-start;flex-direction:column;padding:22px 20px}.availability-note .button{width:100%}
+}
+
+/* Final launch refinements: concise adoption, wildlife, contact, and resource layouts. */
+.home-adoptions .adoption-card-photo img{object-position:center 30%}
+.home-adoptions .adoption-card:nth-child(1) .adoption-card-photo img{object-position:center 24%}
+.home-adoptions .adoption-card:nth-child(3) .adoption-card-photo img{object-position:center 22%}
+.home-adoptions .adoption-card:nth-child(4) .adoption-card-photo img{object-position:center 38%}
+.home-adoptions .adoption-card-copy>p:not(.adoption-kind){min-height:0}
+.adoption-page .adoption-card-photo{aspect-ratio:1/1}
+.adoption-page .adoption-card-photo img{object-position:center 30%}
+.adoption-page .adoption-card:nth-child(1) .adoption-card-photo img{object-position:center 22%}
+.adoption-page .adoption-card:nth-child(2) .adoption-card-photo img{object-fit:cover;padding:0;object-position:center}
+.adoption-page .adoption-card:nth-child(3) .adoption-card-photo img{object-position:center 20%}
+.adoption-page .adoption-card:nth-child(4) .adoption-card-photo img{object-position:center 40%}
+.adoption-page .adoption-card:nth-child(5) .adoption-card-photo img{object-position:center 36%}
+.adoption-page .adoption-card:nth-child(6) .adoption-card-photo img{object-position:center 22%}
+.adoption-page .adoption-card-copy>p:not(.adoption-kind){min-height:145px}
+.adoption-page .adoption-card-grid{grid-template-columns:repeat(3,minmax(0,1fr));max-width:1320px}
+.partner-badge{display:flex!important;width:130px;height:130px;flex:0 0 130px;align-items:center;justify-content:center;border:4px solid #fff;border-radius:48% 52% 45% 55%;background:var(--green);color:#fff;font-size:.88rem;font-weight:900;letter-spacing:.12em;line-height:1.5;text-align:center;text-transform:uppercase;box-shadow:0 12px 25px rgba(45,55,44,.14);transform:rotate(-5deg)}
+
+/* Donation page: branded, accessible gift mockup that matches the rest of the site. */
+.donation-hero{display:block;padding:clamp(72px,8vw,130px) clamp(24px,6vw,110px);background:linear-gradient(125deg,#fff0b9,#fff8e8 52%,#d9f0f0)}
+.donation-intro{max-width:900px}
+.donation-gift-section{background:#f3eee4}
+.donation-gift-layout{display:grid;grid-template-columns:minmax(0,.85fr) minmax(440px,1.15fr);align-items:start;gap:clamp(45px,7vw,110px);max-width:1320px;margin:0 auto}
+.donation-gift-copy{padding-top:22px}.donation-gift-copy h2{max-width:650px;margin:8px 0 18px;font-family:Georgia,serif;font-size:clamp(2.2rem,4.5vw,4.6rem);line-height:.98}.donation-gift-copy p:last-child{max-width:620px}
+.donation-intro{max-width:850px}
+.donation-intro h1{max-width:780px;margin:.12em 0 .28em;font-family:Georgia,serif;font-size:clamp(3.7rem,6.4vw,7.4rem);font-weight:700;line-height:.92;letter-spacing:-.045em;text-transform:none}
+.donation-intro>p:not(.eyebrow){max-width:720px;font-size:clamp(1.05rem,1.45vw,1.35rem);line-height:1.55}
+.donation-form-card{padding:clamp(28px,4vw,48px);border:5px solid rgba(255,255,255,.9);border-radius:42px 28px 48px 34px;background:#fffdf8;box-shadow:0 18px 42px rgba(45,55,44,.13)}
+.donation-form-card h2{margin:.12em 0 .65em;font-family:Georgia,serif;font-size:clamp(2.4rem,4vw,4.5rem);line-height:1;text-transform:none}
+.donation-form-card form{display:grid;gap:17px}
+.donation-form-card fieldset{min-width:0;margin:0;padding:0;border:0}
+.donation-form-card legend,.donation-form-card>form>label{display:block;margin-bottom:9px;font-weight:900}
+.donation-form-card small{font-weight:500}
+.donation-choice-grid{display:grid;gap:10px}
+.donation-choice-grid.frequency{grid-template-columns:1fr 1fr}
+.donation-choice-grid.amounts{grid-template-columns:repeat(3,1fr)}
+.donation-choice-grid label{cursor:pointer}
+.donation-choice-grid input{position:absolute;width:1px;height:1px;overflow:hidden;opacity:0}
+.donation-choice-grid span{display:flex;min-height:54px;align-items:center;justify-content:center;padding:10px;border:2px solid rgba(49,123,123,.25);border-radius:15px;background:#fff;color:var(--ink);font-weight:900;transition:border-color .18s ease,background .18s ease,transform .18s ease}
+.donation-choice-grid input:checked+span{border-color:var(--coral);background:#ffe0d6;color:#963b29;transform:translateY(-1px)}
+.donation-choice-grid input:focus-visible+span{outline:3px solid var(--teal);outline-offset:3px}
+.donation-form-card textarea{width:100%;padding:15px 16px;border:2px solid rgba(49,123,123,.25);border-radius:16px;background:#fff;color:var(--ink);font:inherit;resize:vertical}
+.donation-form-card .button{width:100%;margin-top:3px;border:0;text-align:center;cursor:pointer}
+.donation-impact{background:#fffaf0}
+.donation-impact .section-heading{max-width:900px;margin:0 auto 42px;text-align:center}
+.donation-impact .section-heading h2{font-family:Georgia,serif;font-size:clamp(2.7rem,5vw,5.5rem);line-height:1;text-transform:none}
+.donation-giving-grid{grid-template-columns:repeat(3,1fr);max-width:1320px;margin:0 auto}
+.donation-giving-grid article:nth-child(1){background:#e8dcc2}
+.donation-giving-grid article:nth-child(2){background:#c6d2c3}
+.donation-giving-grid article:nth-child(3){background:#d8ad98}
+.donation-giving-grid article h3{font-family:Georgia,serif;font-size:1.7rem}
+.donate-page .donation-giving-grid::before,.donate-page .donation-giving-grid::after,.donate-page .donation-giving-grid article::after,.donate-page .donation-giving-grid article h3::before{content:none!important;display:none!important}
+.donate-page .tax-note{justify-content:flex-start;padding-left:clamp(24px,9vw,170px);padding-right:clamp(24px,9vw,170px)}
+
+@media(max-width:1000px){
+  .donation-gift-layout{grid-template-columns:1fr}
+  .donation-form-card{max-width:720px}
+}
+@media(max-width:720px){
+  .donation-hero{padding:58px 20px 70px}
+  .donation-intro h1{font-size:clamp(3.2rem,15vw,5rem)}
+  .donation-form-card{padding:27px 19px}
+  .donation-choice-grid.amounts{grid-template-columns:1fr 1fr}
+  .donation-giving-grid{grid-template-columns:1fr}
+}
+.reptile-support-note>div:nth-child(2){max-width:820px}
+
+.resource-education{display:grid;grid-template-columns:1fr minmax(320px,.72fr);align-items:center;gap:clamp(40px,8vw,120px);background:linear-gradient(115deg,#fff7d8,#fffaf0 56%,#d7eff0)}
+.resource-education h2{font-family:Georgia,serif;font-size:clamp(2.8rem,4.5vw,5rem);line-height:.98;text-transform:none}
+.resource-education p:not(.eyebrow){max-width:720px;font-size:1.08rem;line-height:1.65}
+.resource-education figure{margin:0;padding:10px;border-radius:45px 28px 50px 34px;background:#fff;box-shadow:var(--shadow);transform:rotate(1deg)}
+.resource-education img{display:block;width:100%;height:380px;border-radius:36px 20px 41px 27px;object-fit:cover}
+.resource-category{overflow:hidden}
+.resource-category::before{content:'';display:block;height:clamp(180px,15vw,225px);margin:-34px -34px 24px;background:center/cover no-repeat}
+.resource-category:nth-child(1)::before{background-image:url('../images/haven-silkie.jpg');background-position:center 28%}
+.resource-category:nth-child(2)::before{background-image:url('../images/haven-corgi.jpg');background-position:center 31%}
+.resource-category:nth-child(3)::before{background-image:url('../images/adopt-orange-cat.jpg');background-position:center 32%}
+.resource-category:nth-child(4)::before{background-image:url('../images/haven-baby-birds.jpg');background-position:center 40%}
+.resources-page .resource-category:nth-child(1){background:#d8c39b}.resources-page .resource-category:nth-child(1)::before{background-image:url('../images/crystal-wildlife-care.jpg');background-position:center 35%}
+.resources-page .resource-category:nth-child(2){background:#c9a08e}.resources-page .resource-category:nth-child(2)::before{background-image:url('../images/haven-corgi.jpg');background-position:center 27%}
+.resources-page .resource-category:nth-child(3){background:#acb99e}.resources-page .resource-category:nth-child(3)::before{background-image:url('../images/adopt-orange-cat.jpg');background-position:center 34%}
+.resources-page .resource-category:nth-child(4){background:#9ebabb}.resources-page .resource-category:nth-child(4)::before{background-image:url('../images/haven-baby-birds.jpg');background-position:center 43%}
+
+.contact-form-section{display:grid;grid-template-columns:minmax(0,1fr) minmax(300px,.52fr);gap:clamp(40px,7vw,100px);background:#fffaf0}
+#email-contact-form{display:grid;gap:10px;max-width:780px;margin-top:30px;padding:34px;border:4px solid #fff;border-radius:42px 29px 48px 34px;background:#d7eff0;box-shadow:0 15px 30px rgba(45,55,44,.1)}
+#email-contact-form label{margin-top:8px;font-weight:900}
+#email-contact-form input,#email-contact-form select,#email-contact-form textarea{width:100%;padding:15px 16px;border:2px solid rgba(49,123,123,.25);border-radius:15px;background:#fffdf7;color:var(--ink);font:inherit}
+#email-contact-form textarea{resize:vertical}
+#email-contact-form .button{margin-top:12px;border:0;cursor:pointer}
+.contact-form-section aside{align-self:start;padding:34px;border-radius:36px;background:var(--sun);box-shadow:var(--shadow)}
+.contact-form-section aside a{color:var(--teal);font-weight:900;overflow-wrap:anywhere}
+.location-section{display:grid;grid-template-columns:.7fr 1.3fr;align-items:center;gap:clamp(38px,7vw,100px);background:linear-gradient(115deg,#fff6ce,#fffaf0)}
+.location-section h2{font-family:Georgia,serif;font-size:clamp(2.5rem,4vw,4.6rem);line-height:1;text-transform:none}
+.location-section iframe{width:100%;height:430px;border:10px solid #fff;border-radius:48px 30px 52px 36px;box-shadow:var(--shadow)}
+
+.wildlife-alert{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:40px;background:linear-gradient(115deg,#fff0b9,#fff9e9 58%,#d7eff0)}
+.wildlife-alert h1{margin:.1em 0 .25em;font-family:Georgia,serif;font-size:clamp(3.4rem,6vw,7rem);line-height:.94}
+.wildlife-alert>div:first-child p:not(.eyebrow){max-width:780px;font-size:1.1rem}
+.wildlife-alert-actions{max-width:330px;padding:30px;border-radius:34px;background:#fff;box-shadow:var(--shadow);text-align:center}
+.wildlife-alert-actions p{margin-bottom:0;font-weight:700}
+.wildlife-need-help{display:grid;grid-template-columns:.72fr 1.28fr;gap:38px 80px;background:#fffaf0}
+.wildlife-need-help h2{font-family:Georgia,serif;font-size:clamp(2.7rem,4.5vw,5rem);line-height:.98;text-transform:none}
+.wildlife-need-help ul{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:0;padding:0;list-style:none}
+.wildlife-need-help li{padding:15px 17px;border-radius:17px;background:#fff;box-shadow:0 7px 18px rgba(45,55,44,.06);font-weight:700}
+.wildlife-observe-note{grid-column:1/-1;margin:0;padding:22px 26px;border-left:5px solid var(--teal);border-radius:0 20px 20px 0;background:#e2f2ee;font-weight:700}
+.wildlife-guide{display:grid;grid-template-columns:1fr 1fr;gap:22px;background:linear-gradient(110deg,#eef7f1,#fffaf0)}
+.wildlife-guide article{padding:clamp(28px,4vw,48px);border:4px solid rgba(255,255,255,.8);border-radius:38px 28px 44px 32px;box-shadow:0 12px 26px rgba(45,55,44,.08)}
+.wildlife-guide article>span{display:flex;width:48px;height:48px;align-items:center;justify-content:center;border:2px solid currentColor;border-radius:50%;color:var(--coral);font-weight:900}
+.wildlife-guide h2{font-family:Georgia,serif;font-size:clamp(2rem,3vw,3.1rem);line-height:1.02;text-transform:none}
+.guide-callout{display:block;margin-top:18px;color:var(--teal);text-transform:uppercase;letter-spacing:.05em}
+.wildlife-bottom-cta{display:flex;align-items:center;justify-content:space-between;gap:35px;background:#fff0bd}
+.wildlife-bottom-cta h2{font-family:Georgia,serif;font-size:clamp(2.4rem,4vw,4.5rem);line-height:1;text-transform:none}
+
+@media(max-width:1050px){
+  .adoption-page .adoption-card-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .resource-education,.contact-form-section,.location-section,.wildlife-need-help{grid-template-columns:1fr}
+  .wildlife-alert{grid-template-columns:1fr}.wildlife-alert-actions{max-width:560px}
+}
+@media(max-width:650px){
+  .adoption-page .adoption-card-grid,.wildlife-guide{grid-template-columns:1fr}
+  .adoption-page .adoption-card-copy>p:not(.adoption-kind){min-height:0}
+  .partner-badge{width:105px;height:105px;flex-basis:105px}
+  .resource-education,.contact-form-section,.location-section,.wildlife-alert,.wildlife-need-help,.wildlife-guide,.wildlife-bottom-cta{padding-left:20px;padding-right:20px}
+  .resource-education img,.location-section iframe{height:320px}
+  #email-contact-form{padding:22px 18px}
+  .wildlife-need-help ul{grid-template-columns:1fr}
+  .wildlife-bottom-cta{align-items:flex-start;flex-direction:column}
+}
+
+/* Final cohesion pass: remove repeated intros and hold related actions together. */
+.resources-hero{background:linear-gradient(115deg,#d8eff0,#fffaf0 58%,#fff0bd)}
+.resources-hero .storybook-photo img{object-position:center 46%}
+.resources-page .recommendations{border-top:0;background:linear-gradient(180deg,#fffaf0,#f7faf4)}
+.resources-page .recommendations::before{display:none}
+
+.contact-hero{background:linear-gradient(115deg,#fff2c9,#fffaf0 56%,#d8eff0)}
+.contact-hero .storybook-photo img{object-position:center 43%}
+.contact-form-section{align-items:start;background:linear-gradient(115deg,#fffaf0 0 62%,#fff2c9 100%)}
+.contact-form-section h2{font-family:Georgia,serif;font-size:clamp(2.5rem,4.3vw,4.8rem);line-height:.98;letter-spacing:-.035em;text-transform:none}
+.contact-form-section aside{position:sticky;top:150px;background:linear-gradient(145deg,#ffd760,#fff0bd)}
+.contact-form-section aside h3{margin:.15em 0 .5em;font-family:Georgia,serif;font-size:clamp(1.8rem,2.6vw,2.7rem);line-height:1.05}
+.contact-form-section aside .button{margin-top:8px;color:#fff}
+.contact-email-note{margin:26px 0 0;padding-top:22px;border-top:1px solid rgba(39,35,31,.16)}
+
+.involved-page .wishlist-section{display:block;min-height:0;padding-top:70px;padding-bottom:82px}
+.wishlist-card{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(280px,.75fr);align-items:center;gap:clamp(30px,6vw,90px);max-width:1240px;margin:0 auto;padding:clamp(32px,5vw,58px);border:4px solid rgba(255,255,255,.82);border-radius:42px 30px 48px 34px;background:rgba(255,253,248,.72);box-shadow:0 14px 30px rgba(45,55,44,.09)}
+.involved-page .wishlist-card>div{max-width:none}
+.involved-page .wishlist-card .button-row{justify-content:flex-start;flex-direction:column;align-items:stretch}
+.involved-page .wishlist-card .button{text-align:center}
+
+.wildlife-help-page .wildlife-alert h1,
+.wildlife-help-page .wildlife-need-help h2,
+.wildlife-help-page .wildlife-guide h2,
+.wildlife-help-page .wildlife-bottom-cta h2{font-family:Georgia,serif;letter-spacing:-.03em;text-transform:none}
+.wildlife-help-page .wildlife-alert h1{font-size:clamp(3.2rem,5.4vw,6.4rem)}
+.wildlife-help-page .wildlife-need-help{align-items:center}
+.wildlife-help-page .wildlife-guide{gap:28px;padding-top:80px;padding-bottom:80px}
+.wildlife-help-page .wildlife-guide article{display:flex;flex-direction:column}
+.wildlife-bottom-cta .button{min-width:265px;text-align:center;white-space:normal}
+
+/* Keep adoption calls to action readable inside their containers. */
+.adoption-hero aside>a{font-size:clamp(1.55rem,2vw,2.2rem);line-height:1.08;overflow-wrap:anywhere;white-space:normal}
+.reptile-support-note{display:grid;grid-template-columns:auto minmax(0,1fr);justify-content:initial}
+.reptile-support-note>.button{grid-column:2;justify-self:start;max-width:100%;min-width:0;text-align:center;white-space:normal}
+
+@media(max-width:1050px){
+  .contact-form-section aside{position:static}
+  .wishlist-card{grid-template-columns:1fr}
+  .involved-page .wishlist-card .button-row{max-width:560px}
+}
+@media(max-width:650px){
+  .resources-hero .storybook-photo img,.contact-hero .storybook-photo img{height:300px}
+  .wishlist-card{padding:28px 20px}
+  .involved-page .wishlist-card .button{width:100%}
+  .wildlife-bottom-cta{align-items:stretch}
+  .wildlife-bottom-cta .button{width:100%;min-width:0}
+  .reptile-support-note{grid-template-columns:1fr}
+  .reptile-support-note .partner-badge{justify-self:center}
+  .reptile-support-note>.button{grid-column:auto;justify-self:stretch;width:100%;min-width:0;white-space:normal}
 }

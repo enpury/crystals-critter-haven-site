@@ -48,6 +48,7 @@ const requestedTopic = query.get('topic');
 const requestedResident = query.get('resident');
 const topicSelect = document.querySelector('#contact-topic');
 const messageField = document.querySelector('#contact-message');
+const emailContactForm = document.querySelector('#email-contact-form');
 
 if (topicSelect && requestedTopic) {
   const matchingOption = Array.from(topicSelect.options).find((option) => option.value === requestedTopic || option.text === requestedTopic);
@@ -56,6 +57,33 @@ if (topicSelect && requestedTopic) {
 
 if (messageField && requestedResident) {
   messageField.value = `I'm interested in ${requestedResident}. Please send me more information.`;
+}
+
+// Creates a ready-to-send email without requiring a server or storing visitor data.
+if (emailContactForm) {
+  emailContactForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+    const name = document.querySelector('#contact-name')?.value.trim() || 'Website visitor';
+    const topic = topicSelect?.value || 'General question';
+    const message = messageField?.value.trim() || '';
+    const subject = encodeURIComponent(`${topic} from ${name}`);
+    const body = encodeURIComponent(`Name: ${name}\n\n${message}`);
+    window.location.href = `mailto:crystalscritterhaven@gmail.com?subject=${subject}&body=${body}`;
+  });
+}
+
+// Turns the donation mockup into a useful, ready-to-send inquiry until checkout is connected.
+const donationInterestForm = document.querySelector('#donation-interest-form');
+if (donationInterestForm) {
+  donationInterestForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+    const frequency = donationInterestForm.querySelector('[name="donation-frequency"]:checked')?.value || 'One-time';
+    const amount = donationInterestForm.querySelector('[name="donation-amount"]:checked')?.value || 'Another amount';
+    const note = donationInterestForm.querySelector('#donation-note')?.value.trim() || 'No additional note.';
+    const subject = encodeURIComponent(`Donation inquiry: ${frequency} ${amount}`);
+    const body = encodeURIComponent(`I would like to make a ${frequency.toLowerCase()} gift of ${amount}.\n\nNote: ${note}\n\nPlease send me the current donation instructions.`);
+    window.location.href = `mailto:crystalscritterhaven@gmail.com?subject=${subject}&body=${body}`;
+  });
 }
 
 document.querySelectorAll('[data-resident-name]').forEach((element) => {
